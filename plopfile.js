@@ -11,6 +11,10 @@ module.exports = function (plop) {
 			type: 'add',
 			path: 'src/{{componentName}}.js',
 			templateFile: 'templates/template-p-component.hbs'
+		}, {
+			type: 'add',
+			path: 'src/{{lowerCase componentName}}.css',
+			templateFile: 'templates/template-css.hbs'
 		}]
 	});
 };
