@@ -1,3 +1,4 @@
 var babel = require("babel-core");
+var replace = require("./my-custom-plugin.js");
 
-console.log(babel.transform("const x = () => x + 2").ast.tokens);
+console.log(babel.transform("abc === def", {plugins: [replace]}).code);
