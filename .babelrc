@@ -1,4 +1,4 @@
 {
 	"presets": ["es2015", "react"],
-	"plugins": ["./src/add-props-plugin.js"],
+	"plugins": [["./src/remove-node-with-field-plugin.js", { "regexp": "data-*" }]],
 }

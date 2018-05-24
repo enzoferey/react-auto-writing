@@ -7,7 +7,10 @@ const Habak = () => <p className="habak-component">Habak</p>
 class HabakClass extends React.Component {
 	render() {
 		return (
-			<Habak />
+			<div>
+				<Habak />
+				<Habak data-cy="to-be-removed" />
+			</div>
 		);
 	}
 }
