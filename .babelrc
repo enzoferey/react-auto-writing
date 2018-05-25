@@ -1,4 +1,4 @@
 {
 	"presets": ["es2015", "react"],
-	"plugins": [["./src/remove-node-with-field-plugin.js", { "regexp": "data-*" }]],
+	"plugins": [["./src/add-attribute-plugin.js", { "label": "data-inspector" }]],
 }
